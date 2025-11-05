@@ -177,7 +177,26 @@
 				"     allowCopyCommand: true,",
 				"     skipDuplicateMapInputs: true,",
 				"     skipDuplicateMapOutputs: true,",
-				"     errorHandlingOption: 'stopOnFirstError') ~> SynapseTargetwrite"
+				"     errorHandlingOption: 'stopOnFirstError',",
+				"     mapColumn(",
+				"          booking_id,",
+				"          listing_id,",
+				"          status,",
+				"          nights,",
+				"          lead_time_days,",
+				"          guests_adults,",
+				"          guests_children,",
+				"          guests_infants,",
+				"          price_nightly,",
+				"          cleaning_fee,",
+				"          total_amount,",
+				"          currency,",
+				"          country_code,",
+				"          city,",
+				"          channel,",
+				"          device_type,",
+				"          cancellation_reason",
+				"     )) ~> SynapseTargetwrite"
 			]
 		}
 	}
