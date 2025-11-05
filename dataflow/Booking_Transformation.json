@@ -171,7 +171,7 @@
 				"     deletable:false,",
 				"     insertable:true,",
 				"     updateable:true,",
-				"     upsertable:false,",
+				"     upsertable:true,",
 				"     format: 'table',",
 				"     staged: true,",
 				"     allowCopyCommand: true,",
