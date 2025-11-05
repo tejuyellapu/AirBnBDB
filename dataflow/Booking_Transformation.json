@@ -105,7 +105,7 @@
 				"     format: 'table',",
 				"     staged: true) ~> SynapseBookingFactTarget",
 				"BookingSource split(checkout_date < checkin_date,",
-				"     ERROR_FUNCTION(''),",
+				"     checkout_date>checkin_date,",
 				"     disjoint: false) ~> DataQualityCheck@(BadRecords, AcceptedRecords)",
 				"DataQualityCheck@AcceptedRecords, SynapseBookingFactTarget lookup(DataQualityCheck@AcceptedRecords@booking_id == SynapseBookingFactTarget@booking_id,",
 				"     multiple: false,",
