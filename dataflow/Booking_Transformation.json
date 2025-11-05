@@ -172,6 +172,7 @@
 				"     insertable:true,",
 				"     updateable:true,",
 				"     upsertable:true,",
+				"     keys:[(booking_id)],",
 				"     format: 'table',",
 				"     staged: true,",
 				"     allowCopyCommand: true,",
